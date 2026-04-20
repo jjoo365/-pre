@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>에어백, 당신을 구출해드리겠습니다.</title>
+  <style>
+    body,h1,h2,p{margin:0;padding: 0}
+    .flex{display: flex;}
+    .contents{width: 900px;
+      margin: auto;
+      background: white;
+      justify-content: space-between;}
+    .logo{padding: 20px 40px;}
+    .menu{display: flex;}
+    li{list-style-type: none;
+      color: white;
+      padding: 20px 40px;}
+    a{display: block;
+      background: none;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: SM KGothic Std}
+    a:hover{background: none;
+      color: #00C03D;
+      transition: all 1s;}
+
+    #floating-img {
+      position: fixed;
+      width: 120px;
+      top: 0;
+      right: 0;
+      z-index: 998;}
+
+    h1{font-size: 60px;
+      font-weight: 700;
+      color: black;
+      font-family: 'SM KMyungJo Std', serif;
+      line-height: 1.2;
+      letter-spacing: -2px;}
+
+    h2{font-size: 40px;
+      font-weight: 700;
+      color: black;
+      font-family: 'SM KMyungJo Std', serif;
+      letter-spacing: -1px;
+      margin-bottom: 20px;}
+
+    p{padding: 20px 0px;
+      font-size: 17px;
+      color: #444;
+      line-height: 1.9;}
+
+    div{width: 800px;
+      margin: auto;}
+
+    /* 네비 */
+    nav{
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: white;
+      border-bottom: 1px solid #eee;
+      z-index: 999;}
+
+    /* 히어로 */
+    header{
+      background: white;
+      padding: 180px 0px 100px 0px;}
+
+    /* 섹션 공통 */
+    section{
+      padding: 120px 0px;
+      border-top: 1px solid #e0e0e0;}
+
+    /* 섹션 홀수 배경 */
+    section:nth-child(odd){background: white;}
+
+    /* 섹션 짝수 배경 */
+    section:nth-child(even){background: #f7f7f7;}
+
+    /* 소제목 태그 */
+    .tag{
+      font-size: 13px;
+      font-weight: 700;
+      color: #aaa;
+      letter-spacing: 0.2em;
+      margin-bottom: 14px;}
+
+    /* 푸터 */
+    footer{
+      background: #111;
+      color: #aaa;
+      padding: 60px 0px;}
+
+    footer div{
+      width: 800px;
+      margin: auto;}
+
+    .footer-logo{
+      font-size: 28px;
+      font-weight: 900;
+      color: white;
+      font-family: 'SM KMyungJo Std', serif;
+      margin-bottom: 20px;}
+
+    .footer-logo span{color: #00C03D;}
+
+    .footer-links{
+      display: flex;
+      gap: 32px;
+      margin-bottom: 40px;}
+
+    .footer-links a{
+      color: #aaa;
+      font-size: 14px;
+      padding: 0;}
+
+    .footer-links a:hover{color: #00C03D;}
+
+    .footer-copy{
+      font-size: 13px;
+      color: #555;
+      border-top: 1px solid #333;
+      padding-top: 28px;}
+  </style>
+</head>
+<body>
+
+  <img id="floating-img" src="image_1.png">
+
+  <!-- 네비 -->
+  <nav>
+    <div class="contents flex">
+      <li class="item"><a href="#누가">누가</a></li>
+      <li class="item"><a href="#언제">언제</a></li>
+      <li class="item"><a href="#어디서">어디서</a></li>
+      <li class="item"><a href="#무엇을">무엇을</a></li>
+      <li class="item"><a href="#어떻게">어떻게</a></li>
+      <li class="item"><a href="#왜">왜</a></li>
+    </div>
+  </nav>
+
+  <!-- 히어로 -->
+  <header>
+    <div>
+      <h1>에어백,<br>당신을 구출해드리겠습니다.</h1>
+      <p> </p>
+    </div>
+  </header>
+
+  <!-- 누가 -->
+  <section id="누가">
+    <div>
+      <p class="tag">누가</p>
+      <h2>전문가가 직접 움직입니다.</h2>
+      <p>에어백의 팀은 법률, 의료, 심리, 재난 각 분야의 전문가들로 구성되어 있습니다. 어떤 상황에서도 최선의 해결책을 찾아드립니다.</p>
+    </div>
+  </section>
+
+  <!-- 언제 -->
+  <section id="언제">
+    <div>
+      <p class="tag">언제</p>
+      <h2>24시간, 365일.</h2>
+      <p>위기는 예고 없이 찾아옵니다. 에어백은 밤낮없이, 휴일 없이 항상 당신 곁에 있습니다.
+      <p>단 한 번의 터치로 즉시 펼쳐집니다.</p>
+    </div>
+  </section>
+
+  <!-- 어디서 -->
+  <section id="어디서">
+    <div>
+      <p class="tag">어디서</p>
+      <h2>대한민국 어디서든.</h2>
+      <p>서울부터 제주까지, 도심이든 산간 오지든 에어백의 네트워크는 전국을 커버합니다. 
+      <p>당신이 있는 곳이 바로 에어백의 자리입니다.</p>
+    </div>
+  </section>
+
+  <!-- 무엇을 -->
+  <section id="무엇을">
+    <div>
+      <p class="tag">무엇을</p>
+      <h2>모든 위기를 해결합니다.</h2>
+      <p>법률 분쟁, 의료 응급, 재난 대응, 심리 지원, 신변 보호까지. 에어백은 당신의 모든 위기 상황에 함께합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 어떻게 -->
+  <section id="어떻게">
+    <div>
+      <p class="tag">어떻게</p>
+      <h2>3단계로 구출합니다.</h2>
+      <p>① <br>
+         ② <br>
+         ③ </p>
+    </div>
+  </section>
+
+  <!-- 왜 -->
+  <section id="왜">
+    <div>
+      <p class="tag">왜</p>
+      <h2>여기까지.. 주제를 바꾸느라 많이 작업하지 못했습니다</h2>
+      <p>에어백 서비스 간단 설명
+      당신을 현실로부터 구해드립니다.
+      <p>죽을 위기 상황에 펼쳐지는 에어백, 하지만 우리는 살아가면서 죽을 위기보단 사소하고 자잘한 위기 상황을 더욱 자주 맞이한다. 
+      <p>일상 속 사소한 문제 상황으로부터 떨어져 나올 수 있는 나만의 에어백이 있다면? 
+      <p>회피하고 싶거나 너무 부끄러운 상황에! 에어백 서비스를 실행한다면 그 상황으로부터 뛰쳐나와 에어백으로 도망쳐 점~프! 할 수 있다.
+      <p>추가로 꼴 보기 싫은 인간 앞에서 에어백을 펼치고 그 사람을 밀친다면 내 눈앞에서 삭제할 수 있다!</p>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <div>
+      <p class="footer-logo"><span>에어</span>백</p>
+      <div class="footer-links">
+        <a href="#누가">누가</a>
+        <a href="#언제">언제</a>
+        <a href="#어디서">어디서</a>
+        <a href="#무엇을">무엇을</a>
+        <a href="#어떻게">어떻게</a>
+        <a href="#왜">왜</a>
+      </div>
+      <p class="footer-copy">© 2026 에어백. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var img = document.getElementById('floating-img');
+      var maxScroll = document.body.scrollHeight - window.innerHeight;
+      var ratio = window.scrollY / maxScroll;
+      var endTop = window.innerHeight - 120;
+      var currentTop = endTop * ratio;
+      img.style.top = currentTop + 'px';
+    });
+  </script>
+
+</body>
+</html>
